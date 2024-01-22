@@ -1,0 +1,36 @@
+{{!--
+
+registration handelbars
+
+--}}
+
+<main>
+    {{#if error}}
+        <p>{{error}}</p>
+    {{/if}}
+    <p id="error" class="error" hidden>Inputs must be valid</p>
+
+    <form action="/register" method="POST" id="registration-form">
+        <label for="firstNameInput">First Name:</label>
+        <input type="text" name="firstNameInput" id="firstNameInput">
+        <label for="lastNameInput">Last Name:</label>
+        <input type="text" name="lastNameInput" id="lastNameInput">
+        <label for="emailAddressInput">Email Address:</label>
+        <input type="email" name="emailAddressInput" id="emailAddressInput">
+        <label for="passwordInput">Password:</label>
+        <input type="password" name="passwordInput" id="passwordInput">
+        <label for="confirmPasswordInput">Confirm Password:</label>
+        <input type="password" name="confirmPasswordInput" id="confirmPasswordInput">
+        <label for="roleInput">Choose a role:</label>
+        <select id="roleInput" name="roleInput">
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <a href="/login">Already have an account? Click here to log-in</a>
+    <script src='../public/js/client_side_validation.js'></script>
+
+</main>    

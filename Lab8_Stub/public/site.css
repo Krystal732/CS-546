@@ -1,0 +1,64 @@
+/*This file should have 10 CSS rulesets */
+* {
+	box-sizing: border-box;
+}
+
+html,
+
+
+body {
+    font-size: 16pt;
+	background: rgb(93, 93, 93);
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 80%;
+	margin: auto;
+}
+
+
+
+h1,
+h2,
+h1 {
+	font-size: 2rem;
+    color:rgb(132, 255, 175)
+}
+
+h2 {
+	font-size: 1.5rem;
+    color:rgb(173, 132, 255)
+}
+
+
+p {
+	font-size: 1rem;
+	line-height: 2;
+    color:cadetblue
+}
+li {
+    font-weight: bold;
+}
+article {
+    background-color: #fff;
+}
+form {
+    background-color: #ff0000; 
+
+}
+
+label {
+    font-weight: bold;
+    color: #360f0f;
+}
+ol {
+    color: #ff47e0; 
+}
+
+ul {
+    color: #00806d; 
+}
+a {
+    color: #a8d2ff; 
+}
